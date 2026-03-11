@@ -327,13 +327,13 @@
                 const color = new THREE.Color();
                 
                 if (height < 2) {
-                    color.setHex(0x8B7355); // Brown (low)
+                    color.setHex(0x0070C0); // Blue (low)
                 } else if (height < 8) {
-                    color.setHex(0x228B22); // Forest green
+                    color.setHex(0x00B050); // Green
                 } else if (height < 15) {
-                    color.setHex(0x90EE90); // Light green
+                    color.setHex(0xF9DE83); // Yellow
                 } else {
-                    color.setHex(0xFFFFFF); // White (peaks)
+                    color.setHex(0xCF3120); // Red (peaks)
                 }
                 
                 colors.push(color.r, color.g, color.b);
