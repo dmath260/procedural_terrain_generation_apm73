@@ -326,8 +326,10 @@
                 const height = vertices[i + 2];
                 const color = new THREE.Color();
                 
-                if (height < 0) {
-                    color.setHex(0x0070C0); // Blue (low)
+                if (height < -6) {
+                    color.setHex(0x002060); // Navy blue (low)
+                } else if (height < 0) {
+                    color.setHex(0x0070C0); // Blue
                 } else if (height < 2) {
                     color.setHex(0x00B0F0); // Light blue
                 } else if (height < 8) {
